@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+openai
+motor
+redis
+requests
+python-dotenv
+pytest
