@@ -22,7 +22,7 @@ openai_client = OpenAI(
     api_key=os.environ["OPENAI_API_KEY"]
 )
 
-BACKEND_URL = "https://backend-service/api/messages"
+BACKEND_URL = os.environ["BACKEND_URL"]
 
 ### Gateway messages format variables
 GW_API_KEY_HEADER = 'x-api-key:'
