@@ -31,7 +31,7 @@ class SecureLLM:
                 max_tokens=self.max_tokens,
                 input=self.input_setup(llm_fit_message)
             )
-            raw_response = json.loads(raw_response)
+            raw_response = json.loads(raw_response.output_text)
             self.is_llm_approved, self.response, self.threats = raw_response["approved"],\
                 raw_response["reason"], raw_response["threats"]
             self.post_llm_response_validations(inc_message)
