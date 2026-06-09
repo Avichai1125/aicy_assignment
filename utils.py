@@ -1,4 +1,4 @@
-#from fastapi import HTTPException
+from fastapi import HTTPException
 from datetime import datetime, timezone
 from defines import GW_KEY_ENCODING, PAIRS_FOR_POST_LLM,\
     PAIRS_FOR_REDACT, ID_CASE_FLAG, ID_TOKEN_OPTS, RAISE_ERROR_TOKEN
